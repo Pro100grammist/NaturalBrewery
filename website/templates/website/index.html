@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">Nature Brewery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-menu">
+            <a href="">
+              <img
+                src="{% static 'website/images/logo.webp' %}"
+                alt="Логотип Nature Brewery"
+              />
+            </a>
+            <!-- menubar -->
+            <ul class="header-menu-list">
+              <li>
+                <a class="link-header" href="#tradition-section">Традиції</a>
+              </li>
+              <li>
+                <a class="link-header" href="#brewers-section">Пивовари</a>
+              </li>
+              <li>
+                <a class="link-header" href="#formats-section">Формати</a>
+              </li>
+              <li>
+                <a class="link-header" href="#contacts-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button btn-open" type="button">
+            Замовити дзвінок
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div>
+          <h1 class="hero-title" lang="en">
+            <span class="accent">Nature</span> Brewery
+          </h1>
+        </div>
+      </section>
+      <section class="advantages-section">
+        <div class="container">
+          <ul class="advantages">
+            <li class="adv-item">Відомий бренд на ринку</li>
+            <li class="adv-item">Широкий вибір</li>
+            <li class="adv-item">Професійна команда</li>
+          </ul>
+        </div>
+      </section>
+      <section class="tradition-section section" id="tradition-section">
+        <div class="container">
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="traditions-title section-title">
+                Сучасний формат. Класичні традиції.
+              </h2>
+              <p class="tradition-text">
+                <span class="brand">nature brewery</span> — це броварня, що
+                об'єднала найкращі традиції варіння та сучасні технології,
+                зберігаючи при цьому неперевершений смак аутентичних пивоварів.
+                Ми пишаємося своєю здатністю поєднувати унікальні рецепти з
+                використанням натуральних інгредієнтів, створюючи справжню
+                симфонію смаку у кожній краплі нашого пива.
+              </p>
+              <p class="tradition-text">
+                "Ми втілюємо ідеал ефективності, як найвідоміші мережі, але в
+                своєму власному стилі.
+                <span
+                  >Замовляйте на сайті, і ваше пиво буде готове до відправки за
+                  10 хвилин.</span
+                >
+                Найважливіше для нас - висока якість обслуговування, щоб кожен
+                момент у нас був для вас особливим."
+              </p>
+            </div>
+            <img
+              src="{% static 'website/images/brewery.jpg' %}"
+              alt="Nature brewery image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section" id="brewers-section">
+        <div class="container">
+          <h2 class="brewers-title section-title centered">
+            Наші <span class="accent">пивовари</span>
+          </h2>
+          <ul class="brewers-list">
+            <li class="brewery-master">
+              <article class="brewer-rectangle">
+                <img
+                  class="brewer-image-left"
+                  src="{% static 'website/images/coolman.jpg' %}"
+                  alt="Coolman"
+                />
+                <div>
+                  <h3 class="brewer-title" lang="en">Hans Coolman</h3>
+                  <div class="brewer-text">
+                    <p>Це Ганс Кулман.</p>
+                    <p>
+                      Ганс всесвітньо відомий німецький бровар, який варить пиво
+                      вже в третьому поколінні.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="brewery-master">
+              <article class="brewer-rectangle">
+                <img
+                  class="brewer-image-right"
+                  src="{% static 'website/images/pivchansky.jpg' %}"
+                  alt="Pivchansky"
+                />
+                <div>
+                  <h3 class="brewer-title" lang="en">Petro Pivchansky</h3>
+                  <div class="brewer-text">
+                    <p>А це, Петро Пивчанський.</p>
+                    <p>
+                      Петро переможить багатьох авторитетних конкурсів та
+                      переможець номінації "Best IPA 2023"
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="formats-section">
+        <div class="container">
+          <h2 class="formats-title section-title centered">Формати</h2>
+          <div class="inner-container-formats">
+            <button class="arrow-button" type="button">
+              <svg class="arrow" width="16" height="16">
+                <use
+                  href="{% static 'website/images/symbol-defs.svg#icon-left_arrow' %}"
+                ></use>
+              </svg>
+            </button>
+            <ul class="formats-list">
+              <li class="formats-item">
+                <article class="format-tile">
+                  <h3 class="format-title" lang="en">Small Brewery</h3>
+                  <img
+                    src="{% static 'website/images/mini_brewery.jpg' %}"
+                    alt="Small Brewery"
+                  />
+                  <div class="format-text">
+                    <p>Nano brewery 100L</p>
+                    <p>Microbrewery 200L</p>
+                    <p>Minibrewery 300L</p>
+                    <p>Vessel brewery 500L</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-tile">
+                  <h3 class="format-title" lang="en">Large Brewery</h3>
+                  <img
+                    src="{% static 'website/images/large_brewery.jpg' %}"
+                    alt="Large Brewery"
+                  />
+                  <div class="format-text">
+                    <p>Beerhouse 1000L</p>
+                    <p>Malting Barley Supply</p>
+                    <p>Hops</p>
+                    <p>Yeast</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-tile">
+                  <h3 class="format-title" lang="en">Industrial Brew</h3>
+                  <img
+                    src="{% static 'website/images/industrial_brewery.jpg' %}"
+                    alt="In Brewery"
+                  />
+                  <div class="format-text">
+                    <p>Industrial brevery 2500L</p>
+                    <p>Large Scale Brewery 5000L</p>
+                    <p>Large Commercial Brevery 10000L</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="arrow-button" type="button">
+              <svg class="arrow" width="16" height="16">
+                <use
+                  href="{% static 'website/images/symbol-defs.svg#icon-right_arrow' %}"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts-section" id="contacts-section">
+        <div class="container">
+          <div class="inner-container-contacts">
+            <div class="contact-form">
+              <h2 class="contact-title centered">
+                Приєднуйтесь до нашої мережі броварень
+              </h2>
+              <form
+                name="contact-form"
+                autocomplete="off"
+                novalidate
+                method="post"
+                action="{% url 'submit_request' %}"
+                enctype="multipart/form-data"
+              >
+                {% csrf_token %}
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Ваше ім'я</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    id="user-name"
+                    placeholder="Ваше ім'я"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="phone-number"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="tel"
+                    id="phone-number"
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="email"
+                    id="user-email"
+                    placeholder="Електронна пошта"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="user-comment"
+                    >Тут можна залишити коментар</label
+                  >
+                  <textarea name="comment" id="user-comment"></textarea>
+                </div>
+                <button class="form-button button" type="submit">
+                  Надіслати заявку
+                </button>
+              </form>
+            </div>
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.8679598106073!2d30.534449799999994!3d50.424931699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1a98f591a5%3A0xb201d076928c804e!2z0YPQuy4g0JXQstCz0LXQvdC40Y8g0JrQvtC90L7QstCw0LvRjNGG0LAsIDM2LCDQmtC40LXQsiwgMDExMzM!5e0!3m2!1sru!2sua!4v1699894558361!5m2!1sru!2sua"
+              width="600"
+              height="600"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-background">
+      <div class="container">
+        <div class="footer-container">
+          <nav class="basement-nav">
+            <div class="basement-logo">
+              <a href="">
+                <img
+                  class="logo-stamp"
+                  src="{% static 'website/images/logo.svg' %}"
+                  alt="Nature Brewery logo"
+                />
+              </a>
+            </div>
+            <ul class="basement-menubar">
+              <li><a class="link" href="#tradition-section">Традиції</a></li>
+              <li><a class="link" href="#brewers-section">Пивовари</a></li>
+              <li><a class="link" href="#formats-section">Формати</a></li>
+              <li><a class="link" href="#contacts-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <address class="basement-address">
+            <ul class="address-items">
+              <li>
+                <a class="contact" href="tel:+380984840000"
+                  >+38 (098) 484 00 00</a
+                >
+              </li>
+              <li>
+                <a class="contact" href="mailto:newbrewery@gmail.com"
+                  >newbrewery@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="contact"
+                  href="https://maps.app.goo.gl/SS4BvbJcHdaN29qA9"
+                  target="_blank"
+                  >Україна, м. Київ, вул. Євгена Коновальця, 36</a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/">
+                  <svg class="social-icons" width="32" height="32">
+                    <use
+                      href="{% static 'website/images/symbol-defs.svg#icon-fb_icon' %}"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <svg class="social-icons" width="32" height="32">
+                    <use
+                      href="{% static 'website/images/symbol-defs.svg#icon-insta_icon' %}"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="privacy-policy">
+              <a class="contact" href="#">Політика конфіденційності</a>
+              <br />
+              <a
+                class="copyright"
+                href="https://pro100grammer.pythonanywhere.com/"
+                >&copy; 2023 Oleh Sencha</a
+              >
+              <p class="copyright"></p>
+            </div>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <div class="back-drop is-hidden">
+    <div class="feedback-form">
+      <button class="btn-close">Close</button>
+      <h2>Замовити дзвінок</h2>
+      <p>Заповніть форму і ми зв'яжемося з Вами!</p>
+      <form
+        name="call-order-form"
+        autocomplete="off"
+        novalidate
+        method="post"
+        action="{% url 'submit_request' %}"
+        enctype="multipart/form-data"
+      >
+        {% csrf_token %}
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-name"
+            >Ваше ім'я</label
+          >
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="Ваше ім'я"
+          />
+        </div>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="phone-number"
+            >Телефон</label
+          >
+          <input
+            class="form-input"
+            type="tel"
+            name="tel"
+            id="phone-number"
+            placeholder="Телефон"
+          />
+        </div>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-email"
+            >Електронна пошта</label
+          >
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            id="user-email"
+            placeholder="Електронна пошта"
+          />
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="user-comment"
+            >Тут можна залишити коментар</label
+          >
+          <textarea
+            name="comment"
+            id="user-comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button class="form-button button" type="submit">
+          Надіслати заявку
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="{% static 'website/js/form.js' %}"></script>
+  <script src="{% static 'website/js/autofill.js' %}"></script>
+</html>

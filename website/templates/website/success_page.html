@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Success</title>
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/css/style_success_page.css' %}" />
+  </head>
+  <body>
+    <div class="success-page">
+      <h1 class="success-msg">
+        Ваша заявка на дзвінок прийнята та буде оброблена найближчим часом.
+      </h1>
+      <div>
+        <button
+          class="button home-button"
+          type="button"
+          onclick="window.location.href = '/'"
+        >
+          На головну сторінку
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
